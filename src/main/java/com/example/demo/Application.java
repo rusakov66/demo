@@ -9,12 +9,7 @@ import org.springframework.core.env.Environment;
 @SpringBootApplication
 public class Application {
 
-	@Autowired
-	private DatabaseService databaseService;
-
 	public static void main(String[] args) {
-
-		System.out.println();
 	}
 
 }
