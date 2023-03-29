@@ -1,0 +1,18 @@
+Connecting to database...
+Selecting all records from the table...
+ID: 1, Name: John Doe, Age: 20
+ID: 2, Name: John Doe, Age: 20
+ID: 3, Name: Ion Doe, Age: 20
+ID: 4, Name: John Doe, Age: 20
+ID: 5, Name: John Doe, Age: 20
+ID: 6, Name: John Doe, Age: 20
+ID: 7, Name: John Doe, Age: 20
+ID: 8, Name: John Doe, Age: 20
+ID: 9, Name: John Doe, Age: 20
+ID: 10, Name: John Doe, Age: 20
+ID: 11, Name: Jane Doe, Age: 22
+Selecting only the first element of the table...
+ID: 1, Name: John Doe, Age: 20
+Connections are closed
+
+Process finished with exit code 0
