@@ -1,5 +1,3 @@
-package com.example.demo.myTests;
-
 import java.sql.*;
 
 public class MyMainClass {
@@ -13,7 +11,16 @@ public class MyMainClass {
             conn = DriverManager.getConnection(DB_URL);
             System.out.println("Selecting all records from the table...");
             stmt = conn.createStatement();
-            String sql = "SELECT * FROM student";
+            String sql = "";
+            if (args.length == 2) {
+                String firstName = args[0];
+                int id = Integer.parseInt(args[1]);
+                System.out.println("Updating first name for student with id=" + id + " to " + firstName);
+                sql = "UPDATE student SET first_name='" + firstName + "' WHERE id=" + id;
+                stmt.executeUpdate(sql);
+            }
+
+            sql = "SELECT * FROM student";
             ResultSet rs = stmt.executeQuery(sql);
             while (rs.next()) {
                 int id = rs.getInt("id");

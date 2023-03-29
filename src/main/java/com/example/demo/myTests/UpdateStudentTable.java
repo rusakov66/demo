@@ -26,12 +26,6 @@ public class UpdateStudentTable {
             String sql = "INSERT INTO student VALUES (11, 'Jane', 'Doe', 22)";
             stmt.executeUpdate(sql);
 
-            String firstName = "Ion";
-            int id = 3;
-            System.out.println("Updating first name for student with id=" + id + " to " + firstName);
-            sql = "UPDATE student SET first_name='" + firstName + "' WHERE id=" + id;
-            stmt.executeUpdate(sql);
-
             stmt.close();
             conn.close();
         } catch (SQLException se) {
